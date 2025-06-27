@@ -1,0 +1,52 @@
+a {
+  list-style: none !important;
+  text-decoration: none !important;
+}
+ul {
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    color: white;
+    top: 0;
+    background-color: #021317;
+}
+.header{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    background-color: #021317;
+    padding: 15px 25px;
+    border-radius: 100px;
+    background-color: #ebecec1a;
+
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    text-decoration: none;
+    color: white;
+}
+header nav ul a{
+    text-decoration: none;
+    color: white;
+   
+}
+.cta-btn {
+  background-color: #021317;
+  padding: 15px 25px;
+  border-radius: 100px;
+  text-decoration: none ;
+  color: white;
+  background-color: #ebecec1a;
+
+}
+
