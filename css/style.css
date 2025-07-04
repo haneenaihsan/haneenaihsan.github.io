@@ -13,6 +13,7 @@ header{
     color: white;
     top: 0;
     background-color: #021317;
+    z-index: 100;
 }
 .header{
     display: flex;
@@ -49,4 +50,232 @@ header nav ul a{
   background-color: #ebecec1a;
 
 }
+#hero{
+    background-image:url(../img/banner\ bg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-color: #021317;
+}
+body{
+    background-color: #021317 !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.fsrt-glass {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 74px;
+    padding: 25px;
+}
+.second-glass img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.hero-cnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* about section */
 
+
+.mt-60 {
+    margin-top: 120px;
+}
+.paragraph{
+    padding: 10px 15px;
+    color: white;
+}
+.about-cnt{
+    border-radius: 24px;
+   
+    padding: 25px 25px;
+    background: #0E1F26;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 0.1px solid rgb(254 254 254 / 18%);
+    stroke: 0.1px solid white;
+   
+}
+.about-cnt h2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 20px;
+    color: white;
+
+}
+.about p {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.abt-img{
+    position: relative;
+    right: -70px;
+}
+/* tool section */
+.tools-cnt h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.tools-cnt p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+.box {
+    background-color: #0e1f264f;
+    border-radius: 15px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background: linear-gradient(49deg, #0e1f264d, #33718b8a);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 0.1px solid rgb(254 254 254 / 18%);
+    stroke: 0.1px solid white;
+}
+.box span{
+    color: white;
+    font-size: 20px;
+}
+/* service section */
+.service-cnt h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.service-cnt p{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+/* work section */
+.work-cnt h2{
+   color: white;
+}
+.work-cnt a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    border-radius: 100px;
+    background-color: #0c3139f1;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    margin-bottom: 100px;
+}
+.work-cnt.mt-60 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.graph{
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(67, 65, 65, 0.103);
+    border-radius: 10px;
+    height: 500px;
+    flex-wrap: wrap;
+}
+.graph-1{
+    background-color: rgba(255, 255, 255, 0.052);
+    height: 20%;
+    border-radius: 10px;
+    width: 100%;
+}
+.graph-1 a{
+    text-decoration: none;
+    color: white;
+    background-color: #07313a;
+    border-radius: 100px;
+    padding: 5px 20px;
+}
+/* Education section */
+.education {
+    background: no-repeat;
+    background-size: 103%;
+    height: 1459px;
+    margin-top: 10px;
+    width: 100%;
+}
+.education .edu1 img{
+    width: 60px;
+    height: 800px;
+    margin-top: 29px;
+    margin-left: 179px;
+}
+.education .edu1 .new {
+    margin-top: -34px;
+    padding-top: 35px;
+    margin-left: 39px;
+}
+.education .edu1 .new h5 {
+    font-size: 26px;
+    color: white;
+    margin: 232px auto;
+    
+}
+.education .edu1 .new {
+    margin-top: -118px;
+    padding-top: 35px;
+    margin-left: -1034px;
+    display: inline-block;
+    right: 200px;
+}
+.education h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 50px;
+    gap: 15px;
+}
+.content h5 {
+    margin-top: -314px;
+    /* padding-top: 35px; */
+    /* margin-bottom: -15px; */
+    color: white;
+    margin-left: -915px;
+}
+.content p {
+    margin-top: -325px;
+    padding-top: 330px;
+    color: white;
+    margin-left: -915px;
+}
+.content {
+    margin: 0px auto;
+}
