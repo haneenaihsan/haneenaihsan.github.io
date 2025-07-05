@@ -70,6 +70,7 @@ body{
     margin-top: 74px;
     padding: 25px;
 }
+
 .second-glass img{
     display: flex;
     justify-content: center;
@@ -82,8 +83,6 @@ body{
     min-height: 100vh;
 }
 /* about section */
-
-
 .mt-60 {
     margin-top: 120px;
 }
@@ -93,31 +92,66 @@ body{
 }
 .about-cnt{
     border-radius: 24px;
-   
     padding: 25px 25px;
-    background: #0E1F26;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
-    border: 0.1px solid rgb(254 254 254 / 18%);
-    stroke: 0.1px solid white;
-   
 }
-.about-cnt h2{
+   /* .about-cnt {
+    
+        position: absolute;
+        width: 1300px;
+        height: 435px;
+        border-radius: 28px;
+        cursor: move;
+        isolation: isolate;
+        touch-action: none;
+        box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+} */
+
+    .about-cnt::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: 28px;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 12%);
+    background-color: #0e1f26db;
+}
+.about-cnt h1 {
     display: flex;
+    position: relative;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    padding: 25px 20px;
+    color: #ffffff0f;
+    /* bottom: 10px; */
+    font-family: 'Metal Mania', cursive;
+    top: 64px;
+    font-size: 62px;
+}      
+    
+.about-cnt h2 {
+    font-family: 'Merienda One';
+    font-size: 35px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     color: white;
-
-}
-.about p {
+    background: linear-gradient(87deg, #ffffff, #4CB5D0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}                                                         
+.about p{
+    position: relative;
     color: white;
-    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     margin-top: 15px;
+    padding: 10px;
 }
 .about{
     display: flex;
@@ -126,9 +160,16 @@ body{
 }
 .abt-img{
     position: relative;
-    right: -70px;
+    right: -80px;
 }
-/* tool section */
+    
+/* tool section  */
+#tools{
+    height: 100%;
+}
+/* .tools-cnt.mt-60 {
+    margin-top: 700px;
+} */
 .tools-cnt h2{
     display: flex;
     align-items: center;
@@ -144,7 +185,7 @@ body{
     font-size: 16px;
     margin-bottom: 100px;
 }
-.box {
+.box1 {
     background-color: #0e1f264f;
     border-radius: 15px;
     height: 180px;
@@ -152,7 +193,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.box {
+/* .box {
     background: linear-gradient(49deg, #0e1f264d, #33718b8a);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -160,8 +201,305 @@ body{
     -webkit-backdrop-filter: blur(5.3px);
     border: 0.1px solid rgb(254 254 254 / 18%);
     stroke: 0.1px solid white;
+} */
+ :root {
+            /* Inner shadow */
+            --shadow-offset: 0;
+            --shadow-blur: 20px;
+            --shadow-spread: -5px;
+            --shadow-color: rgba(255, 255, 255, 0.7);
+
+            /* Painted glass */
+            --tint-color: 255, 255, 255;
+            --tint-opacity: 0.4;
+
+            /* Background frost */
+            --frost-blur: 2px;
+
+            /* SVG noise/distortion */
+            --noise-frequency: 0.008;
+            --distortion-strength: 77;
+
+            /* Outer shadow blur */
+            --outer-shadow-blur: 24px;
+        }
+ .box1 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 28px;
+            cursor: move;
+            isolation: isolate;
+            touch-action: none;
+            /* enable pointer dragging on touch */
+            box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+        }
+
+      .box1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: 28px;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 23%);
+    background: linear-gradient(49deg, #0e1f264d, #33718b8a);
+    
 }
-.box span{
+
+        .box1::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: 28px;
+            backdrop-filter: blur(var(--frost-blur));
+            filter: url(#glass-distortion);
+            isolation: isolate;
+            -webkit-backdrop-filter: blur(var(--frost-blur));
+            -webkit-filter: url("#glass-distortion");
+        }
+.box1 span{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.box2 {
+    background-color: #0e1f264f;
+    border-radius: 15px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 28px;
+            cursor: move;
+            isolation: isolate;
+            touch-action: none;
+            /* enable pointer dragging on touch */
+            box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+        }
+
+      .box2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: 28px;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 23%);
+    background: linear-gradient(49deg, #0e1f264d, #33718b8a);
+    
+}
+
+        .box2::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: 28px;
+            backdrop-filter: blur(var(--frost-blur));
+            filter: url(#glass-distortion);
+            isolation: isolate;
+            -webkit-backdrop-filter: blur(var(--frost-blur));
+            -webkit-filter: url("#glass-distortion");
+        }
+.box2 span{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.box3 {
+    background-color: #0e1f264f;
+    border-radius: 15px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 28px;
+            cursor: move;
+            isolation: isolate;
+            touch-action: none;
+            /* enable pointer dragging on touch */
+            box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+        }
+
+      .box3::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: 28px;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 23%);
+    background: linear-gradient(49deg, #0e1f264d, #33718b8a);
+    
+}
+
+        .box3::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: 28px;
+            backdrop-filter: blur(var(--frost-blur));
+            filter: url(#glass-distortion);
+            isolation: isolate;
+            -webkit-backdrop-filter: blur(var(--frost-blur));
+            -webkit-filter: url("#glass-distortion");
+        }
+.box3 span{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.box4 {
+    background-color: #0e1f264f;
+    border-radius: 15px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box4 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 28px;
+            cursor: move;
+            isolation: isolate;
+            touch-action: none;
+            /* enable pointer dragging on touch */
+            box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+        }
+
+      .box4::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: 28px;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 23%);
+    background: linear-gradient(49deg, #0e1f264d, #33718b8a);
+    
+}
+
+        .box4::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: 28px;
+            backdrop-filter: blur(var(--frost-blur));
+            filter: url(#glass-distortion);
+            isolation: isolate;
+            -webkit-backdrop-filter: blur(var(--frost-blur));
+            -webkit-filter: url("#glass-distortion");
+        }
+.box4 span{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.box5 {
+    background-color: #0e1f264f;
+    border-radius: 15px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box5 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 28px;
+            cursor: move;
+            isolation: isolate;
+            touch-action: none;
+            /* enable pointer dragging on touch */
+            box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+        }
+
+      .box5::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: 28px;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 23%);
+    background: linear-gradient(49deg, #0e1f264d, #33718b8a);
+    
+}
+
+        .box5::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: 28px;
+            backdrop-filter: blur(var(--frost-blur));
+            filter: url(#glass-distortion);
+            isolation: isolate;
+            -webkit-backdrop-filter: blur(var(--frost-blur));
+            -webkit-filter: url("#glass-distortion");
+        }
+.box5 span{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.box6 {
+    background-color: #0e1f264f;
+    border-radius: 15px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box6 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 28px;
+            cursor: move;
+            isolation: isolate;
+            touch-action: none;
+            /* enable pointer dragging on touch */
+            box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+        }
+
+      .box6::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: 28px;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 23%);
+    background: linear-gradient(49deg, #0e1f264d, #33718b8a);
+    
+}
+
+        .box6::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: 28px;
+            backdrop-filter: blur(var(--frost-blur));
+            filter: url(#glass-distortion);
+            isolation: isolate;
+            -webkit-backdrop-filter: blur(var(--frost-blur));
+            -webkit-filter: url("#glass-distortion");
+        }
+.box6 span{
+    position: relative;
     color: white;
     font-size: 20px;
 }
