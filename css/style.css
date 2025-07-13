@@ -47,8 +47,8 @@ nav::before {
     inset: 0;
     z-index: 0;
     border-radius: 28px;
-    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 10%);
-    background-color: #0c1e24f0;
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 15%);
+    background-color: #021217d9;
 }
         nav::after {
             content: '';
@@ -69,6 +69,7 @@ header nav ul{
     gap: 45px;
     text-decoration: none;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 header nav ul a{
     text-decoration: none;
@@ -84,10 +85,12 @@ header nav ul a{
     background-color: #ffffff78;
 
 }
+
 .cta-btn {
     position: absolute;
     border-radius: 28px;
     color: white;
+    font-family: 'Poppins', sans-serif;
     isolation: isolate;
     touch-action: none;
     box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
@@ -160,7 +163,14 @@ body{
     border-radius: 28px;
     isolation: isolate;
     touch-action: none;
-    box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px var(--outer-shadow-blur) rgb(0 0 0 / 12%);
+    transition: 0.3s;
+}
+.dp-icon:hover i{
+    transform: scale(1.2);
+}
+.dp-icon:hover{
+    background-color: #73fff76b;
 }
 
 .dp-icon::before {
@@ -170,7 +180,7 @@ body{
     z-index: 0;
     border-radius: 28px;
     box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 12%);
-    background-color: #aaaaaa33;
+  background-color: #ebe8e838;
 }
 .dp-icon h5 {
     display: flex;
@@ -184,6 +194,10 @@ body{
     flex-direction: column;
     gap: -22px;
     margin-left: -1225px;
+    transition: 0.3s;
+}
+.social-icn a:hover i{
+    transform: scale(1.2)
 }
 .social-icn a {
     display: inline-flex;
@@ -220,7 +234,7 @@ border: 1px solid rgb(23, 180, 237);
     color: white;
     font-size: 24px;
     font-family: 'Metal Mania', cursive;
-    background: linear-gradient(87deg, #ffffff, #4CB5D0);
+    background: linear-gradient(87deg, #ffffff, #91e9ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 394px;
@@ -231,7 +245,7 @@ border: 1px solid rgb(23, 180, 237);
     color: white;
     font-size: 25px;
     font-family: 'Metal Mania', cursive;
-    background: linear-gradient(87deg, #ffffff, #4CB5D0);
+    background: linear-gradient(87deg, #ffffff, #87e6ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 158px;
@@ -243,7 +257,7 @@ border: 1px solid rgb(23, 180, 237);
     color: white;
     font-size: 80px;
     font-family: 'Metal Mania', cursive;
-    background: linear-gradient(87deg, #ffffff, #4CB5D0);
+    background: linear-gradient(87deg, #ffffff, #72e2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 200px;
@@ -255,7 +269,7 @@ border: 1px solid rgb(23, 180, 237);
     color: white;
     font-size: 80px;
     font-family: 'Metal Mania', cursive;
-    background: linear-gradient(87deg, #ffffff, #4CB5D0);
+    background: linear-gradient(87deg, #ffffff, #72e2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 200px;
@@ -267,7 +281,7 @@ border: 1px solid rgb(23, 180, 237);
     color: white;
     font-size: 80px;
     font-family: 'Metal Mania', cursive;
-    background: linear-gradient(87deg, #ffffff, #4CB5D0);
+    background: linear-gradient(87deg, #ffffff, #72e2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 290px;
@@ -280,7 +294,7 @@ border: 1px solid rgb(23, 180, 237);
     color: white;
     font-size: 80px;
     font-family: 'Metal Mania', cursive;
-    background: linear-gradient(87deg, #ffffff, #4CB5D0);
+    background: linear-gradient(87deg, #ffffff, #72e2ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 290px;
@@ -294,7 +308,7 @@ border: 1px solid rgb(23, 180, 237);
     padding: 10px 15px;
     color: white;
 }
-.about-cnt{
+.about-cnt {
     border-radius: 24px;
     padding: 25px 25px;
     border-radius: 16px;
@@ -302,6 +316,7 @@ border: 1px solid rgb(23, 180, 237);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
     transition: 0.3s;
+    margin-top: 85px;
 }
 
    /* .about-cnt {
@@ -354,7 +369,7 @@ border: 1px solid rgb(23, 180, 237);
 .about p{
     position: relative;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin-top: 15px;
     padding: 10px;
@@ -364,11 +379,40 @@ border: 1px solid rgb(23, 180, 237);
     align-items: center;
     justify-content: space-between;
 }
-.abt-img{
+.abt-img {
     position: relative;
     right: -80px;
+    padding: 12px 5px;
 }
-    
+    /*tool-og */
+
+.tool {
+    background-color: #011317;
+    height: 280px;
+    border-radius: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+}
+.tool img{
+    transition: 0.3s;
+}
+.tool:hover img{
+    transform: scale(1.1);
+}
+.tool-s {
+    background: linear-gradient(181deg, #56B9D2, #011317);
+    /* height: 298px; */
+    border-radius: 124px;
+    padding: 1px 1px;
+}
+.tool p {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+}
 /* tool section  */
 #tools{
     height: 100%;
@@ -377,6 +421,12 @@ border: 1px solid rgb(23, 180, 237);
     margin-top: 130px;
 }
 
+.tool-s-1 {
+    background: linear-gradient(1deg, #56B9D2, #011317);
+    /* height: 298px; */
+    border-radius: 124px;
+    padding: 1px 1px;
+}
 .tools-cnt h2{
     display: flex;
     align-items: center;
@@ -1449,6 +1499,7 @@ b, strong {
     transition: all 300ms;
     box-shadow: inset 4px 5px 5px 0px #0000006e;
 }
+
 .run-2 span {
     color: #00EAFF;
 }
@@ -1557,7 +1608,7 @@ b, strong {
     text-transform: uppercase;
     transition: all 0.2s ease-in;
     border-bottom: 3px solid transparent;
-    font-family: "open sans";
+    font-family: 'Poppins', sans-serif;
 }
 .footer .ft .nav li a:hover{
   color: rgb(23, 180, 237);
@@ -1589,11 +1640,14 @@ b, strong {
 .social-icons1 a:hover{
 border: 1px solid rgb(23, 180, 237);
 }
+.social-icons1 a:hover i{
+    transform: scale(1.2);
+}
 .footer .ft p {
     font-size: 16px;
     color: #ffffff;
     margin-top: 10px;
-    font-family: 'Open Sans';
+    font-family: 'Poppins', sans-serif;
 }
 .chat-icon.btnblicikanima {
     opacity: 1;
@@ -1698,4 +1752,56 @@ border: 1px solid rgb(23, 180, 237);
 }
 #scroll:hover{
 border: 1px solid rgb(23, 180, 237);
+}
+/* wrk .html */
+.works h3 {
+    margin: 20px 7px;
+    font-size: 100px;
+    background: linear-gradient(191deg, #cacaca, #2b8195);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientText 10s ease infinite;
+    display: flex;
+    justify-content: center;
+}
+.works {
+    overflow-x: hidden;
+}
+.works  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: auto;
+}
+.works  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 600px;
+    height: 600px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin: 23px 23px;
+}
+
+.works .overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 162px;
+    width: 103%;
+    background: linear-gradient(to bottom, #803e2400, #212529);
+    color: #ffffff;
+    padding: 65px;
+    transform: translateY(126%);
+    transition: transform 0.5s ease;
+    text-align: center;
+    /* margin-left: 30px; */
+    /* margin-bottom: 25px; */
+    font-weight: 700;
+    /* border-radius: 20px; */
+    font-size: 30px;
+    font-family: sans-serif;
 }
