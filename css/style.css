@@ -396,6 +396,10 @@ border: 1px solid rgb(23, 180, 237);
     flex-direction: column;
     gap: 45px;
 }
+.too-ls {
+    max-width: 90%;
+    margin: 0 auto;
+}
 .tool img{
     transition: 0.3s;
 }
@@ -1771,7 +1775,6 @@ border: 1px solid rgb(23, 180, 237);
 .works  .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    gap: 20px;
     justify-items: center;
     margin: auto;
 }

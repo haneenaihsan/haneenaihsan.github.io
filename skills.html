@@ -9,6 +9,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!--header section-->
@@ -35,59 +36,75 @@
         </div>
     </header>
        <!-- tools section -->
-   <section id="tools">
+   <section id="tools" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
-        <div class="tools-cnt mt-60">
+        <div class="tools-cnt">
             <h2>Tools Expertise</h2>
             <p>We put your ideas and thus your whishes in the form of a unique
                web project that inspiresn you and you customers.
             </p>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="toolround">
-                        <img src="img/tools.png"  alt="">
-                    </div>
-                    <div class="round-bg">
-                        <img src="img/round-ring.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                          <div class="col-sm-4 g-3">
-                               <div class="box1">
-                                   <span>FIGMA</span>
-                               </div>
-                           </div>
-                           <div class="col-sm-4 g-3">
-                               <div class="box2">
-                                   <span>Photoshop</span>
-                               </div>
-                           </div>
-                           <div class="col-sm-4 g-3">
-                               <div class="box3">
-                                   <span>HTML</span>
-                               </div>
-                           </div>
-                            <div class="col-sm-4 g-3">
-                               <div class="box4">
-                                   <span>CSS</span>
-                               </div>
-                           </div>
-                            <div class="col-sm-4 g-3">
-                               <div class="box5">
-                                   <span>JavaScript</span>
-                               </div>
-                           </div>
-                            <div class="col-sm-4 g-3">
-                               <div class="box6">
-                                   <span>Bootstrap</span>
-                               </div>
-                           </div>
-                        </div>
+        
+            
+        </div>
+         <div class="too-ls">
+             <div class="row g-0">
+                <div class="col-sm-2">
+                    <div class="tool-s"data-aos="fade-down"
+                       data-aos-easing="linear"
+                       data-aos-duration="1200" >
+                        <div class="tool">
+                            <img src="img/FIGMA-ICN.png" alt="">
+                         <p>Figma</p>
+                        
                     </div>
                 </div>
             </div>
-        </div>
+                <div class="col-sm-2">
+                    <div class="tool-s-1" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="tool">
+                        <img src="img/photoshop-icn.png" alt="">
+                        <p>Photoshop</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="tool-s"data-aos="fade-down"
+                       data-aos-easing="linear"
+                       data-aos-duration="1500" >
+                        <div class="tool">
+                            <img src="img/html-icn.png" alt="">
+                        <p>HTML</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="tool-s-1"data-aos="fade-up" data-aos-duration="3000">
+                        <div class="tool">
+                            <img src="img/css-icn.png" alt="">
+                            <p>CSS</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="tool-s" data-aos="fade-down"
+                       data-aos-easing="linear"
+                       data-aos-duration="1500">
+                        <div class="tool">
+                            <img src="img/JAVA-ICN.png" alt="">
+                         <p>JavaScript</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="tool-s-1"data-aos="fade-up" data-aos-duration="3000">
+                        <div class="tool">
+                        <img src="img/BOOTSTRAP-ICN.png" alt="">
+                        <p>Bootstrap</p>
+                    </div>
+                    </div>
+                </div>
+         </div>
+            </div>
    </section>
        <!-- get touch -->
   <section id="contact">
@@ -262,5 +279,9 @@
         </div>
     </div>
 </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
