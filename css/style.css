@@ -48,7 +48,7 @@ nav::before {
     z-index: 0;
     border-radius: 28px;
     box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 9%);
-    background-color: #01171d;
+    background-color: #01171dd1;
 }
         nav::after {
             content: '';
@@ -76,6 +76,28 @@ header nav ul a{
     color: white;
    
 }
+header nav ul a {
+  text-decoration: none;
+  position: relative;
+  transition: 0.4s;
+}
+
+header nav ul a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #f9f9f9;
+  transition: all 0.4s;
+}
+
+header nav ul a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
 .cta-btn {
     
     padding: 10px 25px;
@@ -821,6 +843,8 @@ border: 1px solid rgb(23, 180, 237);
     -webkit-text-fill-color: transparent;
     height: 50px;
 }
+
+
 .work-cnt a{
     text-decoration: none;
     list-style: none;
@@ -851,11 +875,16 @@ border: 1px solid rgb(23, 180, 237);
 .works .card img {
     width: 102%;
     object-fit: cover;
-    transition: transform 0.5s ease;
     filter: grayscale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 .works .card img:hover{
     filter: grayscale(0);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .works .overlay a{
@@ -1353,7 +1382,7 @@ b, strong {
   color: rgb(23, 180, 237);
 }
 .nav_links.active a {
-    color: rgba(116, 75, 66, 0.984);
+    /* color: rgba(116, 75, 66, 0.984); */
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 5px;

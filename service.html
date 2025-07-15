@@ -10,6 +10,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
            <!--header section-->
@@ -38,7 +39,7 @@
       <!-- service section -->
     <section id="service">
         <div class="container">
-            <div class="service-cnt mt-60">
+            <div class="service-cnt"data-aos="fade-up" data-aos-duration="1000">
                 <h2>Things I Do</h2>
               <div class="service-para">
                   <p>if you want any of the following services please go on the
@@ -47,8 +48,30 @@
                 </p>
               </div>
                 <div class="parent">
-                   <div class="div1">
-                    <h3>App Design</h3>
+                   <div class="div1"data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                    <div class="app-design-box" data-aos="zoom-in">
+                      <h6>App Design</h6>
+
+                     <div class="fts-og">
+                         <div class="feature"data-aos="fade-left" data-aos-offset="300"  data-aos-easing="ease-in-sine">
+                        <span>Mobile UI</span>
+                        <i class="fas fa-mobile-alt"></i>
+                      </div>
+
+                      <div class="feature"data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <i class="fas fa-bullseye"></i> 
+                        <span>User-Friendly Flow</span>
+                      </div>
+
+                      <div class="feature"data-aos="fade-left" data-aos-offset="300" data-aos-duration="300" data-aos-easing="ease-in-sine">
+                        <span>Component-Based Design</span>
+                        <i class="fas fa-cogs"></i>
+                      </div>
+
+                     </div>
+                    </div>
+
+                    
                    </div>
                    <div class="div3">
                     <span>Dashboard</span>
@@ -69,8 +92,8 @@
                    <div class="div11">
                     <h3>Wireframe</h3>
                    </div>
-                   <div class="div12">
-                    <div class="bx-og">
+                   <div class="div12"data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                    <div class="bx-og"data-aos="zoom-in">
                      <h5>User Research</h5>
                     
                     <div class="arrow">
@@ -108,7 +131,7 @@
                      </div>
                    </div>
                </div>
-               <img src="img/grid-centerimg.png" alt="">
+               <img src="img/grid-centerig.png" alt="">
 
             </div>
         </div>
@@ -287,5 +310,9 @@
         </div>
     </div>
 </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
