@@ -315,6 +315,7 @@ border: 1px solid rgb(23, 180, 237);
     margin-top: 290px;
     letter-spacing: 10px;
 }
+
 /* about section */
 .mt-60 {
     margin-top: 130px;
@@ -389,6 +390,85 @@ border: 1px solid rgb(23, 180, 237);
     right: -80px;
     padding: 12px 5px;
 }
+/* a.cv-btn {
+    background-color: #32b7d6a8;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+} */
+/* From Uiverse.io by jawad_8494 */ 
+.super-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.super-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #00ffff, #f494f4, #00ffff);
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+}
+
+.super-button::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #0a0a0a;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.super-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.071);
+}
+
+.super-button:hover .arrow {
+  transform: translateX(6px);
+}
+
+.arrow2 {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease-in-out;
+  color: #00ffff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
     /*tool-og */
 
 .tool {
@@ -405,12 +485,6 @@ border: 1px solid rgb(23, 180, 237);
     max-width: 90%;
     margin: 0 auto;
 }
-.tool img{
-    transition: 0.3s;
-}
-.tool:hover img{
-    transform: scale(1.1);
-}
 .tool-s {
     background: linear-gradient(181deg, #56B9D2, #011317);
     /* height: 298px; */
@@ -421,6 +495,10 @@ border: 1px solid rgb(23, 180, 237);
     color: white;
     font-size: 22px;
     font-family: sans-serif;
+    transition: 0.3s;
+}
+.tool:hover p{
+    transform: scale(1.1);
 }
 /* tool section  */
 #tools{
@@ -1576,7 +1654,7 @@ border: 1px solid rgb(23, 180, 237);
     /* border: 1px solid black; */
     border-radius: 23px;
     text-align: center;
-    box-shadow: inset 0px 0px 12px 0px #dadada21;
+    box-shadow: inset 0px 0px 12px 0px rgb(23 180 237 / 9%);
     padding: 4px 30px;
     color: #fff;
     transition: all 0.6s ease;
