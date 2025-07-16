@@ -99,7 +99,6 @@ header nav ul a:hover::before {
 }
 
 .cta-btn {
-    
     padding: 10px 25px;
     border-radius: 100px;
     text-decoration: none;
@@ -1343,7 +1342,7 @@ b, strong {
     background-size: cover;
     height: 314px;
     text-align: center;
-    margin-top: -112px;
+    margin-top: 60px;
 }
 .ft a img {
     color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
@@ -1571,4 +1570,25 @@ border: 1px solid rgb(23, 180, 237);
     /* border-radius: 20px; */
     font-size: 30px;
     font-family: sans-serif;
+}
+/* scroll-og */
+.abt-scroll  .hint {
+    /* border: 1px solid black; */
+    border-radius: 23px;
+    text-align: center;
+    box-shadow: inset 0px 0px 12px 0px #dadada21;
+    padding: 4px 30px;
+    color: #fff;
+    transition: all 0.6s ease;
+    margin: 15px 20px;
+    width: fit-content;
+}
+.abt-scroll .hint h5 {
+    font-size: 20px;
+}
+ul.abt-scroll {
+    display: flex;
+}
+.abt-scroll  .hint:hover{
+    background-color: #00eaffcb;
 }
