@@ -107,7 +107,7 @@ header nav ul a:hover::before {
 
 }
 
-.cta-btn {
+/* .cta-btn {
     position: absolute;
     border-radius: 28px;
     color: white;
@@ -125,6 +125,37 @@ header nav ul a:hover::before {
     border-radius: 28px;
     box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) rgb(255 255 255 / 10%);
     background-color: #0c1e24f0;
+} */
+button {
+    border: none;
+    color: #ffffff;
+    background-image: linear-gradient(30deg, #0a1d23, #00dcf2);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+}
+
+button:hover {
+ background-position: right center;
+ background-size: 200% auto;
+ -webkit-animation: pulse 2s infinite;
+ animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+ 0% {
+  box-shadow: 0 0 0 0 #05a1bc66;
+ }
+
+ 70% {
+  box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+ }
+
+ 100% {
+  box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+ }
 }
 #hero{
     background-image:url(../img/banner\ bg.png);
@@ -1139,12 +1170,12 @@ border: 1px solid rgb(23, 180, 237);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.contact-cnt p{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: white;
-   font-size: 20px;
+.contact-cnt p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
 }
 .run {
     display: flex;
@@ -1573,14 +1604,14 @@ border: 1px solid rgb(23, 180, 237);
     padding: 0 20px;
 }
 /* scroll */
-#scroll {
+#scroll-2 {
     position: fixed;
     bottom: 24px;
     left: 1443px;
     /* top: -8px; */
     /* margin-top: 14px; */
-    width: 49px;
-    height: 49px;
+    width: 29px;
+    height: 60px;
     background-color: #00EAFF;
     background: linear-gradient(324deg, #07313a, #021317);
     border-radius: 50%;
@@ -1595,7 +1626,7 @@ border: 1px solid rgb(23, 180, 237);
     z-index: 10;
     transition: 0.3s ease-in-out;
 }
-#scroll:hover{
+#scroll-2:hover{
 border: 1px solid rgb(23, 180, 237);
 }
 /* wrk .html */
@@ -1654,7 +1685,7 @@ border: 1px solid rgb(23, 180, 237);
     /* border: 1px solid black; */
     border-radius: 23px;
     text-align: center;
-    box-shadow: inset 0px 0px 12px 0px rgb(23 180 237 / 9%);
+    box-shadow: inset 0px 0px 12px 0px rgb(23 180 237 / 7%);
     padding: 4px 30px;
     color: #fff;
     transition: all 0.6s ease;
@@ -1670,3 +1701,42 @@ ul.abt-scroll {
 .abt-scroll  .hint:hover{
     background-color: #00eaffcb;
 }
+/*wp*/
+.call {
+    background: #097a7a;
+    color: #050508;
+    position: fixed;
+    z-index: 10;
+    bottom: 160px;
+    right: 0;
+    transform: translate(90px,0px);
+    transition: all 0.6s ease-in-out;
+    padding: 8px 25px 8px 0px;
+    border-radius: 23px;
+}
+.call i {
+    padding: 0 8px 0px 18px;
+    font-size: 25px;
+}
+/* .fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+  */
+.call a i {
+    transition: tran.7s ease-in-out;
+}
+.fa-phone:before {
+    content: "\f095";
+}
+.call a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
