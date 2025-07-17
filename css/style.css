@@ -459,7 +459,7 @@ border: 1px solid rgb(23, 180, 237);
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(from 0deg, #00ffff, #f494f4, #00ffff);
+  background: conic-gradient(from 0deg, #00ffff, #f494f4cd, #00ffff);
   animation: rotate 4s linear infinite;
   z-index: -2;
 }
@@ -1613,7 +1613,7 @@ border: 1px solid rgb(23, 180, 237);
     width: 29px;
     height: 60px;
     background-color: #00EAFF;
-    background: linear-gradient(324deg, #07313a, #021317);
+    background: linear-gradient(324deg, #14485a, #021317);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -1703,7 +1703,7 @@ ul.abt-scroll {
 }
 /*wp*/
 .call {
-    background: #097a7a;
+    background: #14485a;
     color: #050508;
     position: fixed;
     z-index: 10;
@@ -1738,5 +1738,26 @@ ul.abt-scroll {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+}
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #00dcf2; /* നിന്റെ theme color ആയി മാറ്റാമ് */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 

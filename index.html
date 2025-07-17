@@ -345,20 +345,19 @@
                         <a href="works/kfc/index.html" target="_blank"><img src="img/burger.png" id="openPopup10">
                             </a><div class="overlay"><a href="works/kfc/index.html" target="_blank"></a><a href="works/kfc/index.html">food web</a></div>
                     </div>
-                
-                    <div class="card all graphic aos-init aos-animate" data-aos="fade-right">
+                  <div class="card all graphic aos-init aos-animate" data-aos="fade-right">
                         <a href="works/kfc/index.html" target="_blank"><img src="img/travel.png" id="openPopup10">
                             </a><div class="overlay"><a href="works/kfc/index.html" target="_blank"></a><a href="works/kfc/index.html">food web</a></div>
                     </div>
            
                 </div>
                 <div class="col-lg-6 col-md-12">
-                 <div class="card all graphic aos-init aos-animate" data-aos="fade-right">
+                 <div class="card all graphic aos-init aos-animate" data-aos="fade-left">
                         <a href="works/kfc/index.html" target="_blank"><img src="img/smoothie.png" id="openPopup10">
                             </a><div class="overlay"><a href="works/kfc/index.html" target="_blank"></a><a href="works/kfc/index.html">food web</a></div>
                     </div>
                     
-                    <div class="card all graphic aos-init aos-animate" data-aos="fade-right">
+                    <div class="card all graphic aos-init aos-animate" data-aos="fade-left">
                         <a href="works/kfc/index.html" target="_blank"><img src="img/Cream Minimalist Laptop Mockup Promotion Instagram Post.png" id="openPopup10">
                             </a><div class="overlay"><a href="works/kfc/index.html" target="_blank"></a><a href="works/kfc/index.html">food web</a></div>
                     </div>
@@ -602,7 +601,9 @@
         </a>
     </div>
       
-
+    <div id="loader">
+  <div class="spinner"></div>
+</div>
        
 
 
@@ -612,6 +613,12 @@
    <script src="js/jquery-3.7.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    loader.style.display = "none";
+  });
+</script>
 <script>
   AOS.init();
 </script>
