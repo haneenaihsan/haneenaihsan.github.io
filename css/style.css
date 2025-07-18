@@ -12,6 +12,7 @@ header{
     color: white;
     top: 0;
     z-index: 100;
+    position: fixed;
 }
 .header{
     display: flex;
@@ -363,7 +364,7 @@ border: 1px solid rgb(23, 180, 237);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
     transition: 0.3s;
-    margin-top: 85px;
+    margin-top: 150px;
 }
 
 
@@ -513,7 +514,7 @@ border: 1px solid rgb(23, 180, 237);
     gap: 45px;
 }
 .too-ls {
-    max-width: 90%;
+    max-width: 85%;
     margin: 0 auto;
 }
 .tool-s {
@@ -536,9 +537,8 @@ border: 1px solid rgb(23, 180, 237);
     height: 100%;
 }
 .tools-cnt {
-    margin-top: 130px;
+    margin-top: 180px;
 }
-
 .tool-s-1 {
     background: linear-gradient(1deg, #56B9D2, #011317);
     /* height: 298px; */
@@ -1154,8 +1154,9 @@ border: 1px solid rgb(23, 180, 237);
 }
 
 /* contact */
-#contact{
+#contact {
     margin-top: 120px;
+    height: 760px;
 }
 .contact-cnt h2 {
     display: flex;
@@ -1219,10 +1220,7 @@ border: 1px solid rgb(23, 180, 237);
     content: "\f061";
 }
 /* get in touch */
-.contact-cnt {
-    height: 100wh;
-    height: 100vh;
-}
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1403,46 +1401,7 @@ b, strong {
     /* margin-top: 500px; */
     margin-left: -108px;
 }
-/* loop section */
-.loop {
-    overflow: hidden;
-    padding-bottom: 100px;
-}
-.loop .slide {
-    width: 119%;
-    overflow: hidden;
-    background: linear-gradient(160deg, #0a1c2412, #33718b5e);
-    padding: 30px 0px;
-    margin-left: -118px;
-    margin-top: 120px;
-    transform: rotate(360deg);
-    padding-bottom: -76px;
-}
-.loop .slide ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    animation: slideAnimation 30s linear infinite;
-}
-.loop .slide ul li {
-    display: flex;
-    align-items: center;
-    margin-right: 70px;
-    white-space: nowrap;
-    /* color: #000000; */
-    font-size: 25px;
-}
-.loop .slide ul li a {
-    font-size: 20px;
-    font-weight: bold;
-    background: linear-gradient(90deg, #ffffff, #0dcaf0, #386f86);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 200%;
-    animation: gradientText 6s ease infinite;
-    text-transform: uppercase;
-}
+
 /* footer */
 .footer {
     background: url(../img/wp/lyr880.svg);
@@ -1743,21 +1702,30 @@ ul.abt-scroll {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: white;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+  background: #fff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .spinner {
   width: 50px;
   height: 50px;
-  border: 6px solid #ddd;
-  border-top: 6px solid #00dcf2; /* നിന്റെ theme color ആയി മാറ്റാമ് */
+  border: 5px solid #ccc;
+  border-top-color: #3498db;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+.footer{
+    background: url(../img/footer-img.png);
+}
