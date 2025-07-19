@@ -414,9 +414,11 @@ border: 1px solid rgb(23, 180, 237);
     line-height: 24px;
     font-weight: 200;
 }
-.about{
+.about {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .abt-img {
@@ -1396,18 +1398,7 @@ b, strong {
     list-style: none;
     transition: 0.3s;
 }
-.footer .ft .nav li a {
-    text-decoration: none;
-    margin: 0 30px;
-    color: #ffffff;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in;
-    border-bottom: 3px solid transparent;
-    font-family: 'Poppins', sans-serif;
-}
-.footer .ft .nav li a:hover{
-  color: rgb(23, 180, 237);
-}
+
 .nav_links.active a {
     /* color: rgba(116, 75, 66, 0.984); */
     font-weight: 600;
@@ -1864,4 +1855,17 @@ html {
   width: 220px;
   height: 220px;
   opacity: 1;
+}
+
+.footer .ft .nav li a {
+    text-decoration: none;
+    margin: 0 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+    border-bottom: 3px solid transparent;
+    font-family: 'Poppins', sans-serif;
+}
+.footer .ft .nav li a:hover{
+  color: rgb(131, 219, 248);
 }
