@@ -528,12 +528,13 @@ border: 1px solid rgb(23, 180, 237);
     padding: 1px 1px;
 }
 .tool p {
-    color: white;
+    color: rgba(255, 255, 255, 0.625);
     font-size: 22px;
     font-family: sans-serif;
     transition: 0.3s;
 }
 .tool:hover p{
+    color: white;
     transform: scale(1.1);
 }
 /* tool section  */
@@ -1608,9 +1609,7 @@ border: 1px solid rgb(23, 180, 237);
 ul.abt-scroll {
     display: flex;
 }
-.abt-scroll  .hint:hover{
-    background-color: #00eaffcb;
-}
+
 /*wp*/
 .call {
     background: #14485a;
@@ -1653,7 +1652,7 @@ ul.abt-scroll {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #011317;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1663,8 +1662,8 @@ ul.abt-scroll {
 .spinner {
   width: 50px;
   height: 50px;
-  border: 5px solid #ccc;
-  border-top-color: #3498db;
+  border: 5px solid #f5f3f3;
+  border-top-color: #32abfc;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -1860,12 +1859,14 @@ html {
 .footer .ft .nav li a {
     text-decoration: none;
     margin: 0 30px;
-    color: #ffffff;
+    color: #ffffff57;
     text-transform: uppercase;
     transition: all 0.2s ease-in;
     border-bottom: 3px solid transparent;
     font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
 }
-.footer .ft .nav li a:hover{
-  color: rgb(131, 219, 248);
+.footer .ft .nav li:hover a{
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
 }
