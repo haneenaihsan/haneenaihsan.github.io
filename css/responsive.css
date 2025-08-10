@@ -1,97 +1,62 @@
-@media screen and (max-width:1299px){
+@media screen and (max-width:1400px){
+.abt-img {
+    right: -60px;
+    top: -42px;
+}
 
 }
-@media screen and (max-width:1023px){
-    
+@media screen and (max-width:1200px){
+    .abt-img{
+      right: -20px;
+      bottom: 26px;
+    }
+    .content2 h5 {
+    margin-left: -761px;
+}
+.content2 p {
+    margin-left: -765px;
+}
+.content1 h5 {
+  margin-left: -761px;
+}
+.content1 p {
+    margin-left: -765px;
+}
+.content h5 {
+  margin-left: -761px;  
+}
+.content p {
+     margin-left: -765px;
+}
+.education .edu1 img {
+    margin-left: 186px;
+}
+.education .edu1 .new {
+    margin-left: -863px;
+}
 }
 @media screen and (max-width:991px){
-
+.too-ls {
+    width: 900px;
+}
 }
 @media (max-width: 768px) {
-.abt-img {
-    position: relative;
-    right: -80px;
-    padding: 12px 5px;
-    width: 100%;
-    height: 100%;
-}
+
 }
 
 @media (max-width: 600px) {
-  
-  /* 1. Header logo & nav vertical */
-  header .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo img {
-    width: 120px;
-    margin: 0 auto;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-
-  /* 2. Text size കുറക്കുക
-  h1 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  /* 3. Button full-width */
-  button {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    margin: 5px 0;
-  }
-
-  /* 4. Card & Portfolio */
-  .card, .portfolio-box {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  /* 5. Image responsive */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* 6. Section padding */
-  .section {
-    padding: 10px;
-  }
-
-  /* 7. Footer & contact align center */
-  /* footer, .contact {
-    text-align: center;
-  } */ 
-
-
- 
-
-
-
-
 
 }
 @media screen and (max-width:575px){
     
 }
-@media screen and (max-width:425px){
-    
+@media screen and (max-width:457px){
+  .abt-img {
+    right: -9px;
+  
+    top: 1px;
 }
+.service-cnt img {
+  display: none;
+}
+} 

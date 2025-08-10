@@ -169,7 +169,7 @@ body{
     background-color: #021317 !important;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: unset;
 }
 .fsrt-glass {
     display: flex;
@@ -1073,13 +1073,13 @@ border: 1px solid rgb(23, 180, 237);
     width: 42px;
     height: 600px;
     margin-top: 29px;
-    margin-left: 179px;
+    margin-left: 285px;
 }
 .education .edu1 .new {
     margin-top: -58px;
     /* padding-top: 0px; */
     padding: -1px;
-    margin-left: -1034px;
+    margin-left: -951px;
     display: inline-block;
     right: 200px;
 }
@@ -1108,13 +1108,13 @@ border: 1px solid rgb(23, 180, 237);
     /* padding-top: 35px; */
     /* margin-bottom: -15px; */
     color: white;
-    margin-left: -915px;
+     margin-left: -856px;
 }
 .content p {
     /* margin-top: -325px; */
     /* padding-top: 330px; */
     color: white;
-    margin-left: -915px;
+      margin-left: -858px;
     /* margin: 0; */
 }
 .content {
@@ -1126,13 +1126,13 @@ border: 1px solid rgb(23, 180, 237);
     /* padding-top: 35px; */
     /* margin-bottom: -15px; */
     color: white;
-    margin-left: -915px;
+    margin-left: -856px;
 }
 .content1 p {
     /* margin-top: -325px; */
     /* padding-top: 330px; */
     color: white;
-    margin-left: -915px;
+       margin-left: -858px;
     /* margin: 0; */
 }
 .content1 {
@@ -1144,13 +1144,13 @@ border: 1px solid rgb(23, 180, 237);
     /* padding-top: 35px; */
     /* margin-bottom: -15px; */
     color: white;
-    margin-left: -915px;
+    margin-left: -856px;
 }
 .content2 p {
     /* margin-top: -325px; */
     /* padding-top: 330px; */
     color: white;
-    margin-left: -915px;
+    margin-left: -858px;
     /* margin: 0; */
 }
 .content2 {
@@ -1183,47 +1183,8 @@ border: 1px solid rgb(23, 180, 237);
     color: white;
     font-size: 16px;
 }
-.run {
-    display: flex;
-    justify-content: center;
-    /* margin: 90px auto; */
-    margin-top: 1400px;
-    /* margin-bottom: 19px; */
-    margin-left: -700px;
-}
-.run a::before {
-    content: "";
-    position: absolute;
-    /* top: -4px; */
-    left: px;
-    margin-left: -18px;
-    margin-top: -15px;
-    background: #205663;
-    width: 54px;
-    height: 54px;
-    border-radius: 30px;
-    z-index: -1;
-    transition: all 300ms;
-    box-shadow: inset 4px 5px 5px 0px #0000006e;
-}
-.run span {
-    color: #00EAFF;
-}
-.run i {
-    position: relative;
-    top: 0;
-    margin-left: 12px;
-    color: #ffffff;
-    transform: translate(-5px);
-    opacity: 0;
-    transition: 300ms;
-    /* width: 36px; */
-    font-size: 13px;
-    /* height: 30px; */
-}
-.fa-arrow-right:before {
-    content: "\f061";
-}
+
+
 /* get in touch */
 
 .contact-info {
